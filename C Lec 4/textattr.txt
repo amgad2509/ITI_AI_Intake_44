@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <Windows.h>
+#define null -32
+
+ void gotoxy(int x,int y)
+ {
+   COORD coord={0,0};
+   coord.X=x;
+   coord.Y=y;
+   SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE),coord);
+ }
+
+
+void textattr(int i)
+{
+	SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE), i);
+}
+int main(){
+    textattr(0x03);
+    printf("\n hello");
+    textattr(0x07);
+    printf("\n hello");
+
+}
