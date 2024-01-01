@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1697232629 source:e:\ml&&dl\iti_9_month\c lec 4\menu_and_highlight\main.c
-	<stdio.h>
-	<stdlib.h>
-	<Windows.h>
-	<string.h>
-
