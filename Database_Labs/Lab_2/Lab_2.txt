@@ -1,0 +1,32 @@
+==>Task One :-
+
+1-Musician(#Id,Name,Phone Number,Street,City)
+2-Song(#Title,Auther,*AlbumID)
+3-Albums(Title,Copyright date,#AlbumID,*Id)
+4-Instrument(#Name,Musical key)
+5-Perform(#*Id,*Title)
+6-Plays(#*Id,*Name)
+
+=================================================================
+==>Task Two :-
+Emp(#EmpNo,EmpName,Dept,Dept_Manager,ProjID,Start_Date,Location,Weeks_On_Project)
+
+1- 1st Normal Form: [multi-value, composite attr, repeating group]
+
+Emp(#EmpNo,EmpName,Dept,Dept_Manager)
+Reapating(#*EmpNo,#ProjID,Start_Date,Location,Weeks_On_Project)
+
+
+2- 2nd NF: 1st NF + Partial Dependency
+
+Start_Date(#*ProjID,Start_Date)
+Reapating(#*EmpNo,#EmpName,Location,Weeks_On_Project)
+Emp(#EmpNo,EmpName,Dept,Dept_Manager)
+
+
+3- 3rd NF: 2nd NF + Transitive Dependency
+
+Start_Date(#*ProjID,Start_Date)
+Reapating(#*EmpNo,#EmpName,Location,Weeks_On_Project)
+Emp(#EmpNo,EmpName,*Dept)
+Dept(#Dept,Dept_Manger)
