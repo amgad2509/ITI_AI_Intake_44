@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1697942751 source:d:\iti\c programming\lab\word and letter counter\main.c
-	<stdlib.h>
-
-1697944311 source:d:\iti\c programming\lab\day 3\home\word and letter counter\main.c
-	<stdio.h>
-	<stdlib.h>
-
